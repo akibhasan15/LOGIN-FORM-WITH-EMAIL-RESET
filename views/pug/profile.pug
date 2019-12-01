@@ -1,0 +1,32 @@
+html
+  head
+    meta(name='description', content='Profile')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/public/style.css')
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    title PROFILE
+  body
+    // add your code below, make sure its indented at this level
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='#') NAVBAR
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo02', aria-controls='navbarTogglerDemo02', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarTogglerDemo02.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+          li.nav-item.active
+            a.nav-link(href='#') HOME 
+              span.sr-only (current)
+          li.nav-item
+             a.nav-link(href='/logout') LOG OUT
+          li.nav-item
+             a.nav-link(href='#') PASSWORD RESET
+          li.nav-item
+             a.nav-link(href='/passwordChange') SETTING
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type='search', placeholder='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+    br
+    h5#welcome.center Howdy, #{username} ! 
+    

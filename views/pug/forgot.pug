@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    
+    link(rel='stylesheet', href='/public/style.css')
+    title FORGOT
+    
+  body
+   
+    br
+    h3.logHead Enter Your Email!
+    form.form-style( action='/forgotpass', method='POST')
+      .form-group
+      label(for='exampleInputEmail') Email address
+      input#exampleInputEmail1.form-control(type='text',name='email' aria-describedby='emailHelp', placeholder='Enter email')
+      small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+      button.btn.btn-outline-primary(type='submit') RESET!
+      br        
+    

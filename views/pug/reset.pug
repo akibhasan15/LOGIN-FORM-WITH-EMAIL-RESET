@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    link(rel='stylesheet', href='/public/style.css')
+    title RESET PASSWORD
+  body  
+    h3.logHead RESET PASSWORD
+  
+    form.form-style( method='post')
+            .form-group
+              label(for='exampleInputEmail1') New Paswword
+              input#exampleInputEmail1.form-control(type='password', name='password',  placeholder='New Password')
+            .form-group
+              label(for='exampleInputPassword1') Confirm Password
+              input#exampleInputPassword1.form-control(type='password', name='confirm', placeholder=' Confirm Password')
+            br
+            button.btn.btn-outline-primary(type='submit') Update Password!
+            br
